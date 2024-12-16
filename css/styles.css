@@ -4,3 +4,7 @@ body {
     background-color: #3f0ea0;
     font-family: Arial, sans-serif;
 }
+
+p {
+    color: rgb(136, 66, 66);
+}
