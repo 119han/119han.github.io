@@ -32,7 +32,7 @@ document.getElementById('word6').addEventListener('click', function() {
 });
 
 document.getElementById('word7').addEventListener('click', function() {
-    audioPlayer.src = 'wxt/准备出发.mp3'; // 替换为你的音频文件路径
+    audioPlayer.src = 'wxt/zbcf.mp3'; // 替换为你的音频文件路径
     audioPlayer.play();
   });
 });
