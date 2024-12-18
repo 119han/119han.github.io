@@ -6,3 +6,8 @@ p {
     background-color: rgba(163, 201, 67, 0.86); /* 设置段落背景色为色 */
     padding: 5px; /* 可选：添加内边距，使背景色区域更明显 */
 }
+
+p {
+    border: 1px solid rgb(0, 0, 0); /* 为段落设置1像素宽的红色虚线边框 *//* solid 实线边框，dashed 虚线边框，dotted 点线边框 */
+    padding: 0px; /* 为段落内容与边框间添加10像素的内边距 */
+}
