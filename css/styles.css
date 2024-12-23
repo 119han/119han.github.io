@@ -1,17 +1,17 @@
 
 /* 在styles.css文件中定义样式 */
 body {
-    background-color: #ffffff;
-    font-family: 微软雅黑；
+    background-color: #ffffff;/*背景颜色*/
+    font-family: 微软雅黑；/*字体样式*/
 }
 
 p {
     color: rgb(37, 76, 195);
-}
+}/*字体颜色*/
 
 p {
     font-family: "Monospace", sans-serif;
-}
+}/*字体样式*/
 
 p {
     background-color: rgba(160, 197, 222, 0.871); /* 设置段落背景色为色 */
