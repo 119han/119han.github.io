@@ -22,3 +22,8 @@ p {
     border: 1px solid rgb(0, 0, 0); /* 为段落设置1像素宽的红色虚线边框 *//* solid 实线边框，dashed 虚线边框，dotted 点线边框 */
     padding: 0px; /* 为段落内容与边框间添加10像素的内边距 */
 }
+
+body {  
+      /* 使背景图片居中显示 */
+    background-position: center center;
+}
