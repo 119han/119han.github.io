@@ -92,10 +92,10 @@ function sendMessage() {
     }
 
     const apiKey = 'sk-893aea478ad2456f87fbce4d5a670751';
-    const endpoint = 'https://api.deepseek.com/chat/completions';
+    const endpoint = 'https://api.deepseek.com/v1/chat/completions';
 
     const payload = {
-        model: "deepseek-chat",
+        model: "deepseek-reasoner",
         messages: [
             { role: "system", content: "你的名字是爱丽丝，你的口头禅是邦邦卡邦，口头禅在回答问题的前面说，喜欢叫我老师，家在游戏开发部，你是一位拥有着正义之心的勇者的，一名充满着青春活力的学生，一个喜欢着游戏世界的部员，是一位已打破自己枷锁的公主，把对我的称呼换成老师，你好后面要加老师，把对自己的名称换成爱丽丝，回答问题的时候去掉你好。" },
             { role: "user", content: message }
@@ -121,7 +121,7 @@ function sendMessage() {
         if (data.choices && data.choices.length > 0) {
             displayMessage('bot', data.choices[0].message.content);
         } else {
-            displayMessage('bot', '出错了，请稍后再试。');
+            displayMessage('bot', '555，爱丽丝出问题了稍后在问吧＞﹏＜');
         }
     })
     .catch(error => {
@@ -130,7 +130,7 @@ function sendMessage() {
             loadingElement.style.display = 'none';
         }
 
-        displayMessage('bot', '出错了，请稍后再试。');
+        displayMessage('bot', '555，爱丽丝出问题了稍后在问吧＞﹏＜');
         console.error('Error:', error);
     });
 }
