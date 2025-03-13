@@ -3,7 +3,7 @@ document.getElementById('passwordForm').addEventListener('submit', function(even
 
     const passwordInput = document.getElementById('password');
     const password = passwordInput.value;
-    const correctPassword = '123456'; // 在这里设置正确的密码
+    const correctPassword = ' '; // 在这里设置正确的密码
 
     if (password === correctPassword) {
         window.location.href = 'index1.html'; // 跳转到目标网页
