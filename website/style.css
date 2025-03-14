@@ -199,7 +199,7 @@ body.dark-mode {
 }
 
 .dark-mode .messages {
-    background-color: #383838;
+    background-color: #383838a5;
     border-color: #444;
     color: #fff;
     backdrop-filter: blur(80px);
@@ -222,7 +222,7 @@ body.dark-mode {
 }
 
 .dark-mode .dropdown-content {
-    background-color: #2d2d2d;
+    background-color: #2d2d2d74;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
