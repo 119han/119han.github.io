@@ -4,7 +4,7 @@
     <link rel="stylesheet" href="css/xy.css">
 </head>
 
-<body style="background-image:url('tupian/gcmm.jpg'); 
+<body class="bodya" style="background-image:url('tupian/gcmm.jpg'); 
     background-position: center; background-repeat: no-repeat;background-size: cover;">
     <!-- 背景图片-->
 
@@ -12,14 +12,15 @@
         <h1>欢迎来到游戏的网页</h1>
 
         <div class="game">
-            <h1>
-                <a href="xyx/扫雷.html" style="text-decoration: none;">
-                    <img src="tupian/L.png" alt="扫雷游戏" width="50" height="50">
-                    <p>扫雷游戏</p>
-                </a>
-            </h1>
+            <img src="tupian/L.png" alt="扫雷游戏" width="50" height="50" onclick="fanhu()">
+            <div onclick="fanhu()">扫雷游戏</div>
+        </div>
+
+        <div class="game">
+            <img src="tupian/T.png" alt="扫雷游戏" width="50" height="50" onclick="tcsa()">
+            <div onclick="tcsa()">贪吃蛇游戏</div>
         </div>
 
     </div>
-
+    <script src="javaS/xyx.js"></script>
 </body>
