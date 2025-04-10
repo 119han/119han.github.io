@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>扫雷游戏</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        #game {
+            display: grid;
+            grid-template-columns: repeat(10, 30px);
+            grid-template-rows: repeat(10, 30px);
+            gap: 2px;
+        }
+        .cell {
+            width: 30px;
+            height: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #ccc;
+            border: 1px solid #999;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        .cell.revealed {
+            background-color: #ddd;
+            cursor: default;
+        }
+        .cell.mine {
+            background-color: #ff4444;
+        }
+    </style>
+</head>
+<body>
+    <div id="game"></div>
+    <script>
+        const gridSize = 10;
+        const mineCount = 10;
+        const game = document.getElementById('game');
+        let board = [];
+
+        function createBoard() {
+            board = Array.from({ length: gridSize }, () => Array(gridSize).fill(0));
+            let minesPlaced = 0;
+
+            while (minesPlaced < mineCount) {
+                const x = Math.floor(Math.random() * gridSize);
+                const y = Math.floor(Math.random() * gridSize);
+
+                if (board[x][y] !== 'mine') {
+                    board[x][y] = 'mine';
+                    minesPlaced++;
+                }
+            }
+
+            for (let x = 0; x < gridSize; x++) {
+                for (let y = 0; y < gridSize; y++) {
+                    if (board[x][y] === 'mine') continue;
+
+                    let count = 0;
+                    for (let dx = -1; dx <= 1; dx++) {
+                        for (let dy = -1; dy <= 1; dy++) {
+                            const nx = x + dx;
+                            const ny = y + dy;
+                            if (nx >= 0 && nx < gridSize && ny >= 0 && ny < gridSize && board[nx][ny] === 'mine') {
+                                count++;
+                            }
+                        }
+                    }
+                    board[x][y] = count;
+                }
+            }
+        }
+
+        function renderBoard() {
+            game.innerHTML = '';
+            for (let x = 0; x < gridSize; x++) {
+                for (let y = 0; y < gridSize; y++) {
+                    const cell = document.createElement('div');
+                    cell.classList.add('cell');
+                    cell.dataset.x = x;
+                    cell.dataset.y = y;
+                    cell.addEventListener('click', handleCellClick);
+                    game.appendChild(cell);
+                }
+            }
+        }
+
+        function handleCellClick(event) {
+            const cell = event.target;
+            const x = parseInt(cell.dataset.x);
+            const y = parseInt(cell.dataset.y);
+
+            if (board[x][y] === 'mine') {
+                cell.classList.add('mine');
+                alert('游戏结束！你踩到雷了！');
+                resetGame();
+            } else {
+                cell.textContent = board[x][y];
+                cell.classList.add('revealed');
+                if (board[x][y] === 0) {
+                    revealEmptyCells(x, y);
+                }
+            }
+        }
+
+        function revealEmptyCells(x, y) {
+            for (let dx = -1; dx <= 1; dx++) {
+                for (let dy = -1; dy <= 1; dy++) {
+                    const nx = x + dx;
+                    const ny = y + dy;
+                    if (nx >= 0 && nx < gridSize && ny >= 0 && ny < gridSize) {
+                        const cell = document.querySelector(`.cell[data-x="${nx}"][data-y="${ny}"]`);
+                        if (!cell.classList.contains('revealed')) {
+                            cell.textContent = board[nx][ny];
+                            cell.classList.add('revealed');
+                            if (board[nx][ny] === 0) {
+                                revealEmptyCells(nx, ny);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        function resetGame() {
+            createBoard();
+            renderBoard();
+        }
+
+        resetGame();
+    </script>
+</body>
+</html>
