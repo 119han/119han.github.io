@@ -17,7 +17,10 @@
     border-radius: 10px;
 }
 
-p {
-    font-size: 18px;
+.zy {
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    font-size: 25px;
 }
 

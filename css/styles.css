@@ -5,20 +5,14 @@ body {
     font-family: 微软雅黑；/*字体样式*/
 }
 
-p {
+h1 {
     color: rgb(37, 76, 195);
-}/*字体颜色*/
-
-p {
     font-family: "Monospace", sans-serif;
-}/*字体样式*/
+}/*字体颜色*//*字体样式*/
 
 .gusi {
     background-color: rgba(160, 197, 222, 0.871); /* 设置段落背景色为色 */
     padding: 5px; /* 可选：添加内边距，使背景色区域更明显 */
-}
-
-.gusi {
     border: 1px solid rgb(0, 0, 0); /* 为段落设置1像素宽的红色虚线边框 *//* solid 实线边框，dashed 虚线边框，dotted 点线边框 */
     padding: 0px; /* 为段落内容与边框间添加10像素的内边距 */
     padding: 20px;
@@ -31,7 +25,7 @@ body {
 }
 
 .zd {
-    background-color: rgba(160, 197, 222, 0.871); /* 设置段落背景色为色 */
+    background-color: rgba(128, 133, 231, 0.625); /* 设置段落背景色为色 */
     padding: 5px; /* 可选：添加内边距，使背景色区域更明显 */
     padding: 0px; /* 为段落内容与边框间添加10像素的内边距 */
 }
