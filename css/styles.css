@@ -29,3 +29,9 @@ body {
       /* 使背景图片居中显示 */
     background-position: center center;
 }
+
+.zd {
+    background-color: rgba(160, 197, 222, 0.871); /* 设置段落背景色为色 */
+    padding: 5px; /* 可选：添加内边距，使背景色区域更明显 */
+    padding: 0px; /* 为段落内容与边框间添加10像素的内边距 */
+}
