@@ -35,3 +35,38 @@ body {
     padding: 5px; /* 可选：添加内边距，使背景色区域更明显 */
     padding: 0px; /* 为段落内容与边框间添加10像素的内边距 */
 }
+
+.phira {
+    color: rgb(198, 23, 23);
+    background-color: rgb(222, 160, 160); /* 设置段落背景色为色 */
+    padding: 5px; /* 可选：添加内边距，使背景色区域更明显 */
+    border-radius: 10px;
+}
+
+.als {
+    color: rgb(23, 163, 198);
+    background-color: rgb(5, 249, 212); /* 设置段落背景色为色 */
+    padding: 5px; /* 可选：添加内边距，使背景色区域更明显 */
+    border-radius: 10px;
+}
+
+.wxt {
+    color: rgb(220, 156, 59);
+    background-color: rgb(163, 201, 67, 0.871); /* 设置段落背景色为色 */
+    padding: 5px; /* 可选：添加内边距，使背景色区域更明显 */
+    border-radius: 10px;
+}
+
+.xyx {
+    color: rgb(0, 0, 0);
+    background-color: rgba(255, 255, 255, 0.871); /* 设置段落背景色为色 */
+    padding: 5px; /* 可选：添加内边距，使背景色区域更明显 */
+    border-radius: 10px;
+}
+
+.A439 {
+    color: rgb(20, 15, 172);
+    background-color: rgb(17, 80, 216); /* 设置段落背景色为色 */
+    padding: 5px; /* 可选：添加内边距，使背景色区域更明显 */
+    border-radius: 10px;
+}
