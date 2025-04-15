@@ -1,27 +1,120 @@
-<!DOCTYPE html>
-<html lang="zh-CN">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>密码验证</title>
-    <link rel="stylesheet" href="css/myma.css">
+      <meta charset="utf-8">
+      <title>119汉的网页</title>
+      <link rel="shortcut icon" href="tupian/tubiao.ico" type="image/x-icon">
+      <link rel="stylesheet" href="css\styles.css" type="text/css">
 </head>
-<body>
 
-    <div class="video-container">
-        <video class="fullscreen-video" autoplay muted loop>
-          <source src="mp4/天童爱丽丝女仆.mp4" type="video/mp4">
-          您的浏览器不支持 video 标签。
-        </video>
-    </div>
+<body> <!--style="background-image:url('tupian/ppt.jpg'); 
+background-position: center; background-repeat: no-repeat;background-size: cover;"-->
+      <!--背景图片-->
 
-    <div class="container">
-        <h1>请输入空格</h1>
-        <form id="passwordForm">
-            <input type="password" id="password" placeholder="输入密码" required>
-            <button type="submit">提交</button>
-        </form>
-    </div>
-    <script src="javaS/myma.js"></script>
+      <script>
+            // 创建一个数组来存储背景图片的路径
+            var bgImages = [
+                  'tupian/alsbjt.png',
+                  'tupian/ppt.jpg',
+                  'tupian/gcmm.jpg'
+                  // 添加更多图片路径
+            ];
+
+            // 生成一个随机索引来从数组中选择图片
+            var randomIndex = Math.floor(Math.random() * bgImages.length);
+
+            // 设置body的背景图片
+            document.body.style.backgroundImage = "url('" + bgImages[randomIndex] + "')";
+
+            // 如果你希望背景图片不重复且覆盖整个页面，可以添加以下样式
+            document.body.style.backgroundSize = "cover";
+            document.body.style.backgroundRepeat = "no-repeat";
+            document.body.style.backgroundRepeat = "center";
+      </script>
+
+      <biv class="zd" style="font-size: 9px;display: flex;">
+            <biv class="zd1">
+                  <img src="tupian/logo.png" alt="置顶logo" width="170" height="90" onclick="bili()">
+                  <!--置顶logo-->
+            </biv>
+
+            <biv class="zd2">
+                  <h1>
+                        <biv class="phira" style="text-decoration: none;" onclick="phira()">
+                              phira皮肤包
+                        </biv>
+
+                        <biv class="als" style="text-decoration: none;" onclick="als()">
+                              爱丽丝AI聊天
+                        </biv>
+
+                        <biv class="wxt" style="text-decoration: none;" onclick="wxt()">
+                              王小桃私人叫
+                        </biv>
+                  </h1>
+                  <h1>
+                        <a href="xyxmmjm.html" hrif="xyx.html" class="xyx" style="text-decoration: none;">
+                              小游戏界面
+                        </a>
+
+                        <biv class="A439" target="_blank" style="text-decoration: none;" onclick="A439()">
+                              A439学习资源
+                        </biv>
+                        <!--A439链接-->
+                  </h1>
+            </biv>
+      </biv>
+
+      <biv>
+            <p style="color: rgba(10, 206, 232, 0);">119汉的网页</p>
+            <p style="color: rgba(10, 206, 232, 0);">-</p>
+      </biv>
+
+      <div style="text-align:center;font-size: 10px;display: flex; justify-content: center;">
+            <div class="gusi">
+                  <h1>
+                        <div>欢迎来到119汉的网页</div>
+                        <div>在这里你可以看到精美的图片,也可以看到我制作的phira皮肤。</div>
+                        <div>也可以跳转到学习资源的链接,或者phira皮肤的B站视频链接。</div>
+                        <div>又或者可以听听王小桃语录,还可以和爱丽丝聊天哦～(●'◡'●)。</div>
+                        <div style="color: rgba(10, 206, 232, 0);">-</div>
+                        <div>公告:1.更新了主UI界面。</div>
+                        <div>2.更新了小游戏界面,欢迎体验！</div>
+                  </h1>
+            </div>
+      </div>
+
+      <!--head>
+            <style>
+                  .container {
+                        display: flex;
+                        justify-content: center;
+                        /* 水平居中 */
+                        align-items: center;
+                        /* 垂直居中 */
+                        /*min-height: 100vh;       /* 确保容器填满视口高度 */
+                  }
+
+                  .fixed-image {
+                        width: 300px;
+                        /* 固定宽度 */
+                        height: 200px;
+                        /* 固定高度 */
+                        object-fit: cover;
+                        /* 保持比例填充容器（可选） */
+                  }
+            </style>
+      </head>
+
+      <body>
+            <div class="container">
+                  <img src="tupian/alssr.jpg" alt="示例图片" class="fixed-image">
+            </div>
+      </body-->
+
+      <!--<div style="display: flex; justify-content: center; align-items: center; height: 40vh; text-align:center;">
+            <a href="tupian/alssr.jpg">
+                  <img src="tupian/alssr.jpg" style="max-width: 50%;">
+            </a>
+      </div>
+      <!--王小兆图片-->
+      <script src="javaS/indeex1.js"></script>
 </body>
-</html>

@@ -14,10 +14,6 @@ function wxt() {
     window.location.replace("/wangxiaotao/wxt.html")
 }
 
-function xyx() {
-    window.location.replace("/xyx.html")
-}
-
 function A439() {
     window.location.replace("https://a439-owo.github.io")
 }
