@@ -1,5 +1,5 @@
 function fh() {
-    window.location.replace("/index1.html")
+    window.location.replace("/index.html")
 }
 
 function fanhu() {
