@@ -1,0 +1,36 @@
+.player-container {
+    width: 300px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+button {
+    padding: 8px 16px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.progress-container {
+    margin: 15px 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#progressBar {
+    flex-grow: 1;
+}
+
+.volume-control {
+    margin-top: 10px;
+}
+
+@media (max-width: 600px) {
+    .player-container {
+        width: 90%;
+    }
+}
