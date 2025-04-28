@@ -17,3 +17,7 @@ function wxt() {
 function A439() {
     window.location.replace("https://a439-owo.github.io")
 }
+
+function yyq() {
+    window.location.replace("/yyq.html")
+}
