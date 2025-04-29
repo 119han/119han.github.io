@@ -1,7 +1,6 @@
 const audioPlayer = document.getElementById('audioPlayer');
 const playBtn = document.getElementById('playBtn');
 const pauseBtn = document.getElementById('pauseBtn');
-const stopBtn = document.getElementById('stopBtn');
 const progressBar = document.getElementById('progressBar');
 const currentTimeDisplay = document.getElementById('currentTime');
 const durationDisplay = document.getElementById('duration');
@@ -15,14 +14,6 @@ playBtn.addEventListener('click', () => {
 // 暂停
 pauseBtn.addEventListener('click', () => {
     audioPlayer.pause();
-});
- 
-// 停止（需重置播放进度）
-stopBtn.addEventListener('click', () => {
-    audioPlayer.pause();
-    audioPlayer.currentTime = 0;
-    progressBar.value = 0;
-    updateCurrentTime();
 });
 
 // 更新进度条
