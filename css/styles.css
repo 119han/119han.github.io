@@ -78,7 +78,7 @@ body {
     border-radius: 10px;
 }
 
-.fixed-image {
+.fixed-image { /*之后删除钢管时删除*/
     color: rgb(172, 15, 15);
     background-color: rgb(216, 146, 17); /* 设置段落背景色为色 */
     padding: 5px; /* 可选：添加内边距，使背景色区域更明显 */
