@@ -1,11 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
   var audioPlayer = document.getElementById('audioPlayer');
 
-  document.getElementById('word0').addEventListener('click', function() {
-    audioPlayer.src = 'wxt/zbcf.mp3'; // 替换为你的音频文件路径
-    audioPlayer.play();
-  });
-
   document.getElementById('word1').addEventListener('click', function() {
       audioPlayer.src = 'wxt/kuyashi.mp3'; // 替换为你的音频文件路径
       audioPlayer.play();

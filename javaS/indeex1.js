@@ -21,3 +21,12 @@ function A439() {
 function yyq() {
     window.location.replace("/yyq.html")
 }
+
+document.addEventListener('DOMContentLoaded', function () {// 之后删除钢管时删除
+    var audioPlayer = document.getElementById('audioPlayer');
+
+    document.getElementById('word1').addEventListener('click', function () {
+        audioPlayer.src = 'yyq/aaa/click.ogg'; // 替换为你的音频文件路径
+        audioPlayer.play();
+    });
+});

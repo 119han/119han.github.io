@@ -9,3 +9,11 @@ function qb() {
 function zbcf() {
     window.location.replace("/yyq/zbcf/zbcf.html")
 }
+
+function jmtt() {
+    window.location.replace("/yyq/jmtt/jmtt.html")
+}
+
+function aaa() {
+    window.location.replace("/yyq/aaa/aaa.html")
+}
