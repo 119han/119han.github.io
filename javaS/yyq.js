@@ -17,3 +17,7 @@ function jmtt() {
 function aaa() {
     window.location.replace("/yyq/aaa/aaa.html")
 }
+
+function tzdxp() {
+    window.location.replace("/yyq/tzdxp/tzdxp.html")
+}
