@@ -84,3 +84,9 @@ body {
     padding: 5px; /* 可选：添加内边距，使背景色区域更明显 */
     border-radius: 10px;
 }
+
+.alsqd {
+    background-color: rgba(216, 146, 17, 0); /* 设置段落背景色为色 */
+    border-width: 0; /* 边框宽度设为0 */
+    border-radius: 10px;
+}
