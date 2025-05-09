@@ -18,10 +18,6 @@ function A439() {
     window.location.replace("https://a439-owo.github.io")
 }
 
-function yyq() {
-    window.location.replace("/yyq.html")
-}
-
 document.addEventListener('DOMContentLoaded', function () {// 之后删除钢管时删除
     var audioPlayer = document.getElementById('audioPlayer');
 
