@@ -6,10 +6,6 @@ function phira() {
     window.location.replace("/phirapifu.html")
 }
 
-function als() {
-    window.location.replace("/alsbot/lt.html")
-}
-
 function wxt() {
     window.location.replace("/wangxiaotao/wxt.html")
 }
