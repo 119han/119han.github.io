@@ -15,9 +15,21 @@ h1 {
     border-radius: 10px;
 }
 
+.研讨会 {
+    text-align: center;
+    background-color: rgb(30, 111, 232);
+    border-radius: 10px;
+}
+
 .游戏开发部 {
     text-align: center;
     background-color: rgb(236, 240, 18);
+    border-radius: 10px;
+}
+
+.C {
+    text-align: center;
+    background-color: rgb(18, 196, 240);
     border-radius: 10px;
 }
 
