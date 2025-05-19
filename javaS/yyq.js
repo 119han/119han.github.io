@@ -21,3 +21,7 @@ function aaa() {
 function tzdxp() {
     window.location.replace("/yyq/tzdxp/tzdxp.html")
 }
+
+function bbkb() {
+    window.location.replace("/yyq/bbkb/li.html")
+}

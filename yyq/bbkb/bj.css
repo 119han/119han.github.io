@@ -1,0 +1,24 @@
+.player-container {
+    background-color: rgb(0, 208, 255); /* 设置段落背景色为色 */
+}
+
+
+.playBtn {
+    color: rgb(2, 26, 244);
+    background-color: rgb(0, 225, 255); /* 设置段落背景色为色 */
+    padding: 5px; /* 可选：添加内边距，使背景色区域更明显 */
+    border-radius: 0px;
+    font-size: 18px;
+}
+
+.pauseBtn {
+    color: rgb(2, 26, 244);
+    background-color: rgb(0, 225, 255); /* 设置段落背景色为色 */
+    padding: 5px; /* 可选：添加内边距，使背景色区域更明显 */
+    border-radius: 0px;
+    font-size: 18px;
+}
+
+h1 {
+    color: rgb(255, 255, 255);
+}
