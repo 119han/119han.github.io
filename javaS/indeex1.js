@@ -2,18 +2,6 @@ function bili() {
     window.location.replace("https://space.bilibili.com/1458294782?spm_id_from=333.1007.0.0")
 }
 
-function phira() {
-    window.location.replace("/phirapifu.html")
-}
-
-function wxt() {
-    window.location.replace("/wangxiaotao/wxt.html")
-}
-
-function A439() {
-    window.location.replace("https://a439-owo.github.io")
-}
-
 document.addEventListener('DOMContentLoaded', function () {// 之后删除钢管时删除
     var audioPlayer = document.getElementById('audioPlayer');
 
