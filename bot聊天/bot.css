@@ -1,17 +1,59 @@
 .topnav {
-    background-color: #2f81ed;
+    width: 80%;
+    background-color: #2f81edc9;
     padding: 20px;
     border-radius: 10px;
+    margin: auto;
+}
+
+@media screen and (max-width: 600px) {
+    .topnav {
+        width: 90%
+    }
 }
 
 h1 {
     color: rgb(255, 255, 255);
 }
 
+h2 {
+    color: rgb(255, 255, 255);
+}
+
+#m1 {
+    float: right;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+#m1:hover {
+    text-decoration: underline;
+    color: #00fbff;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+a:hover {
+    text-decoration: underline;
+    color: rgb(0, 102, 255);
+}
+
+h3 {
+    color: #ffffff;
+}
+
+.h3bt {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.277);
+    border-radius: 10px;
+}
 
 .千禧年科技学院 {
-    text-align: center;
-    background-color: rgb(255, 255, 255);
+
+    background-color: rgba(255, 255, 255, 0.277);
     border-radius: 10px;
 }
 
@@ -34,8 +76,7 @@ h1 {
 }
 
 .阿拜多斯学院 {
-    text-align: center;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255, 0.277);
     border-radius: 10px;
 }
 
