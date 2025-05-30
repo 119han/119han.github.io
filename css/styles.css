@@ -1,92 +1,145 @@
-
 /* 在styles.css文件中定义样式 */
 body {
-    background-color: #ffffff;/*背景颜色*/
-    font-family: 微软雅黑；/*字体样式*/
+    background-color: #ffffff;
+    /*背景颜色*/
+    font-family: 微软雅黑；
+        /*字体样式*/
 }
 
 h1 {
     color: rgb(37, 76, 195);
     font-family: "Monospace", sans-serif;
-}/*字体颜色*//*字体样式*/
-
-.gusi {
-    background-color: rgba(160, 197, 222, 0.871); /* 设置段落背景色为色 */
-    padding: 5px; /* 可选：添加内边距，使背景色区域更明显 */
-    border: 1px solid rgb(0, 0, 0); /* 为段落设置1像素宽的红色虚线边框 *//* solid 实线边框，dashed 虚线边框，dotted 点线边框 */
-    padding: 0px; /* 为段落内容与边框间添加10像素的内边距 */
-    padding: 20px;
-    border-radius: 10px;
 }
 
-body {  
-      /* 使背景图片居中显示 */
+/*字体颜色*/
+/*字体样式*/
+
+.gusi {
+    text-align: center;/*居中*/
+    font-size: 10px;/*字体大小*/
+    display: flex;/*设置flex布局*/
+    justify-content: center;/*水平居中*/
+}
+
+.gusi-1 {
+    background-color: rgba(160, 197, 222, 0.871);
+    /* 设置段落背景色为色 */
+    padding: 5px;
+    /* 可选：添加内边距，使背景色区域更明显 */
+    border: 1px solid rgb(0, 0, 0);
+    /* 为段落设置1像素宽的红色虚线边框 */
+    /* solid 实线边框，dashed 虚线边框，dotted 点线边框 */
+    padding: 0px;
+    /* 为段落内容与边框间添加10像素的内边距 */
+    padding: 20px;
+    /* 可选：添加内边距，使背景色区域更明显 */
+    border-radius: 10px;
+    /* 设置圆角半径 */
+}
+
+@media only screen and (max-width: 600px) {
+    .gusi {
+        width: 90%;
+        /* 设置宽度为80% */
+        height: 77%;
+        /* 设置高度为545px */
+        margin: 0 auto;
+        /* 居中 */
+    }
+    h1 {
+        font-size: 22px;/*体大小*/
+    }
+
+    .zd1 img {
+        width:170px;
+        height:110px;
+    }
+
+}
+
+body {
+    /* 使背景图片居中显示 */
     background-position: center center;
 }
 
-@media (max-width: 60px) {
-    .gusi {
-        width: 50%;
-    }
-}
-
 .zd {
-    background: linear-gradient(to left, rgba(255, 128, 0, 0.5), rgb(255, 0, 221,0.5)); /* 设置背景为线性渐变 */
-    margin:  -8px -8px; ; /* 外边距 */
-    padding: 5px; /* 可选：添加内边距，使背景色区域更明显 */
-    padding: 0px; /* 为段落内容与边框间添加10像素的内边距 */
+    background: linear-gradient(to left, rgba(255, 128, 0, 0.5), rgb(255, 0, 221, 0.5));
+    /* 设置背景为线性渐变 */
+    margin: -8px -8px;
+    /* 外边距 */
+    padding: 5px;
+    /* 可选：添加内边距，使背景色区域更明显 */
+    padding: 0px;
+    /* 为段落内容与边框间添加10像素的内边距 */
 }
 
 .phira {
     color: rgb(198, 23, 23);
-    background-color: rgb(222, 160, 160); /* 设置段落背景色为色 */
-    padding: 5px; /* 可选：添加内边距，使背景色区域更明显 */
+    background-color: rgb(222, 160, 160);
+    /* 设置段落背景色为色 */
+    padding: 5px;
+    /* 可选：添加内边距，使背景色区域更明显 */
     border-radius: 10px;
 }
 
 .als {
     color: rgb(23, 163, 198);
-    background-color: rgb(5, 249, 212); /* 设置段落背景色为色 */
-    padding: 5px; /* 可选：添加内边距，使背景色区域更明显 */
+    background-color: rgb(5, 249, 212);
+    /* 设置段落背景色为色 */
+    padding: 5px;
+    /* 可选：添加内边距，使背景色区域更明显 */
     border-radius: 10px;
 }
 
 .wxt {
     color: rgb(220, 156, 59);
-    background-color: rgb(163, 201, 67, 0.871); /* 设置段落背景色为色 */
-    padding: 5px; /* 可选：添加内边距，使背景色区域更明显 */
+    background-color: rgb(163, 201, 67, 0.871);
+    /* 设置段落背景色为色 */
+    padding: 5px;
+    /* 可选：添加内边距，使背景色区域更明显 */
     border-radius: 10px;
 }
 
 .xyx {
     color: rgb(0, 0, 0);
-    background-color: rgba(255, 255, 255, 0.871); /* 设置段落背景色为色 */
-    padding: 5px; /* 可选：添加内边距，使背景色区域更明显 */
+    background-color: rgba(255, 255, 255, 0.871);
+    /* 设置段落背景色为色 */
+    padding: 5px;
+    /* 可选：添加内边距，使背景色区域更明显 */
     border-radius: 10px;
 }
 
 .A439 {
     color: rgb(20, 15, 172);
-    background-color: rgb(17, 80, 216); /* 设置段落背景色为色 */
-    padding: 5px; /* 可选：添加内边距，使背景色区域更明显 */
+    background-color: rgb(17, 80, 216);
+    /* 设置段落背景色为色 */
+    padding: 5px;
+    /* 可选：添加内边距，使背景色区域更明显 */
     border-radius: 10px;
 }
 
 .yyq {
     color: rgb(172, 15, 15);
-    background-color: rgb(216, 146, 17); /* 设置段落背景色为色 */
-    padding: 5px; /* 可选：添加内边距，使背景色区域更明显 */
+    background-color: rgb(216, 146, 17);
+    /* 设置段落背景色为色 */
+    padding: 5px;
+    /* 可选：添加内边距，使背景色区域更明显 */
     border-radius: 10px;
 }
 
-.fixed-image { /*之后删除钢管时删除*/
-    background-color: rgb(216, 146, 17); /* 设置段落背景色为色 */
-    border-width: 0; /* 边框宽度设为0 */
+.fixed-image {
+    /*之后删除钢管时删除*/
+    background-color: rgb(216, 146, 17);
+    /* 设置段落背景色为色 */
+    border-width: 0;
+    /* 边框宽度设为0 */
     border-radius: 10px;
 }
 
 .alsqd {
-    background-color: rgba(216, 146, 17, 0); /* 设置段落背景色为色 */
-    border-width: 0; /* 边框宽度设为0 */
+    background-color: rgba(216, 146, 17, 0);
+    /* 设置段落背景色为色 */
+    border-width: 0;
+    /* 边框宽度设为0 */
     border-radius: 10px;
 }
