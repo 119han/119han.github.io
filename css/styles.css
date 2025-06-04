@@ -3,25 +3,23 @@ body {
     background-color: #ffffff;
     /*背景颜色*/
     font-family: 微软雅黑；
-        /*字体样式*/
+    /*字体样式*/
 }
 
 h1 {
     color: rgb(37, 76, 195);
+    /*字体颜色*/
     font-family: "Monospace", sans-serif;
+    /*字体样式*/
 }
-
-/*字体颜色*/
-/*字体样式*/
 
 .gusi {
-    text-align: center;/*居中*/
-    font-size: 10px;/*字体大小*/
-    display: flex;/*设置flex布局*/
-    justify-content: center;/*水平居中*/
-}
-
-.gusi-1 {
+    width: 650px;
+    /* 设置宽度为650px */
+    height: 374px;
+    /* 设置高度为374px */
+    margin: 60px auto;
+    /* 居中 */
     background-color: rgba(160, 197, 222, 0.871);
     /* 设置段落背景色为色 */
     padding: 5px;
@@ -35,26 +33,53 @@ h1 {
     /* 可选：添加内边距，使背景色区域更明显 */
     border-radius: 10px;
     /* 设置圆角半径 */
+    font-size: 10px;
+    /*字体大小*/
+    text-align: center;
+    /*文字居中*/
 }
 
-@media only screen and (max-width: 600px) {
+.title {
+    font-size: 50px;
+    /*字体大小*/
+}
+
+.als-bbkb img {
+    max-width: 190%;
+    /* 图片大小为190% */
+}
+
+@media only screen and (max-width: 1080px) {
     .gusi {
         width: 90%;
-        /* 设置宽度为80% */
-        height: 77%;
-        /* 设置高度为545px */
-        margin: 0 auto;
-        /* 居中 */
+        /* 设置宽度为90% */
+        height: 59.8%;
+        /* 设置高度为48.9% */
+        font-size: 30px;
+        /*字体大小*/
     }
-    h1 {
-        font-size: 22px;/*体大小*/
+
+    .zd h1 {
+        font-size: 40px;
+        /*体大小*/
     }
 
     .zd1 img {
-        width:170px;
-        height:110px;
+        width: 350px;
+        /* 设置宽度为350px */
+        height: 200px;
+        /* 设置高度为200px */
     }
 
+    .title {
+        font-size: 90px;
+        /*字体大小*/
+    }
+
+    .als-bbkb img {
+    max-width: 400%;
+    /* 图片大小为400% */
+    }
 }
 
 body {
@@ -63,7 +88,7 @@ body {
 }
 
 .zd {
-    background: linear-gradient(to left, rgba(255, 128, 0, 0.5), rgb(255, 0, 221, 0.5));
+    background: linear-gradient(to left, rgba(255, 255, 255, 0.7), rgba(0, 204, 255, 0.7)80%);
     /* 设置背景为线性渐变 */
     margin: -8px -8px;
     /* 外边距 */
