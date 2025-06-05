@@ -14,10 +14,10 @@ h1 {
 }
 
 .gusi {
-    width: 650px;
-    /* 设置宽度为650px */
-    height: 374px;
-    /* 设置高度为374px */
+    width: 40%;
+    /* 设置宽度为40% */
+    /*height: 52.8%;*/
+    /* 设置高度为52.8% */
     margin: 60px auto;
     /* 居中 */
     background-color: rgba(160, 197, 222, 0.871);
@@ -53,9 +53,9 @@ h1 {
     .gusi {
         width: 90%;
         /* 设置宽度为90% */
-        height: 59.8%;
+        height: 32.8%;
         /* 设置高度为48.9% */
-        font-size: 30px;
+        font-size: 15px;
         /*字体大小*/
     }
 
@@ -72,7 +72,7 @@ h1 {
     }
 
     .title {
-        font-size: 90px;
+        font-size: 60px;
         /*字体大小*/
     }
 
