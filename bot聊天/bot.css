@@ -56,11 +56,11 @@
         height: 80px;
         border-radius: 40px;
         margin: 5px;
+    }
 
-        img {
-            width: 60px;
-            height: 60px;
-        }
+    img {
+        width: 60px;
+        height: 60px;
     }
 
     .topnav-right .h4bt:hover {
@@ -94,15 +94,13 @@ h3 {
     border: 1px solid rgb(168, 152, 152);
     border-radius: 20px;
     margin: 2px;
+}
 
-    img {
-        width: 40px;
-        height: 40px;
-        border-radius: 100px;
-        border: 1px solid rgba(0, 0, 0, 0.500);
-    }
-
-
+img {
+    width: 40px;
+    height: 40px;
+    border-radius: 100px;
+    border: 1px solid rgba(0, 0, 0, 0.500);
 }
 
 .h4bt:hover {
