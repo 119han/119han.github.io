@@ -58,9 +58,9 @@
         margin: 5px;
     }
 
-    img {
-        width: 60px;
-        height: 60px;
+    .topnav-right img {
+        width: 70px;
+        height: 70px;
     }
 
     .topnav-right .h4bt:hover {
@@ -97,8 +97,8 @@ h3 {
 }
 
 img {
-    width: 40px;
-    height: 40px;
+    width: 39px;
+    height: 39px;
     border-radius: 100px;
     border: 1px solid rgba(0, 0, 0, 0.500);
 }
