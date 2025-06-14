@@ -58,7 +58,7 @@
         margin: 5px;
     }
 
-    .topnav-right img {
+    .tp {
         width: 70px;
         height: 70px;
     }
@@ -96,22 +96,21 @@ h3 {
     margin: 2px;
 }
 
-img {
-    width: 39px;
-    height: 39px;
-    border-radius: 100px;
-    border: 1px solid rgba(0, 0, 0, 0.500);
-}
-
 .h4bt:hover {
     box-shadow: 2px 2px 5px 1px rgba(0, 0, 0);
     border-radius: 20px;
 
     a {
-        text-decoration: underline;
         color: rgb(0, 102, 255);
     }
 
+}
+
+.tp {
+    width: 39px;
+    height: 39px;
+    border-radius: 100px;
+    border: 1px solid rgba(0, 0, 0, 0.500);
 }
 
 .学院 {
@@ -138,6 +137,5 @@ a {
 }
 
 a:hover {
-    text-decoration: underline;
     color: rgb(0, 102, 255);
 }

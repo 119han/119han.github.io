@@ -20,16 +20,20 @@
             text-align: center;
             text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
         }
+
+        .qiehuan {
+            display: none;
+        }
     </style>
 </head>
 
 <body>
 
     <div class="content">
-        <p>当前背景: <span id="bg-index">1</span>/<span id="bg-total">1</span></p>
+        <p>当前背景: <span id="bg-index">1</span>/<span id="bg-total">1</span><i style="float: right; margin: 8px -50px;" onclick="toggleContent()"><img style="width: 30%;" src="yj.png"></i></p>
     </div>
 
-    <div class="topnav">
+    <div id="myTopnav" class="topnav">
         <h1>AI聊天网页<a id="m1" href="/index.html">返回首页</a>
         </h1>
         <div class="topnav-right">
@@ -37,26 +41,26 @@
                 <h2>千禧年科技学院</h2>
                 <div class="h3bt">
                     <h3>研讨会</h3>
-                    <div class="h4bt"><img src="yxbot/bot-avatar.png" alt="优香">
+                    <div class="h4bt"><img class="tp" src="yxbot/bot-avatar.png" alt="优香">
                         <a href="yxbot/lt.html">优香&nbsp;&nbsp;</a>
                     </div>
-                    <div class="h4bt"><img src="nybot/bot-avatar.png" alt="诺亚">
+                    <div class="h4bt"><img class="tp" src="nybot/bot-avatar.png" alt="诺亚">
                         <a href="">诺亚（未完成）</a>
                     </div>
                 </div>
                 <div class="h3bt">
                     <h3>游戏开发部</h3>
-                    <div class="h4bt"><img src="alsbot/bot-avatar.png" alt="爱丽丝">
+                    <div class="h4bt"><img class="tp" src="alsbot/bot-avatar.png" alt="爱丽丝">
                         <a href="alsbot/lt.html">爱丽丝&nbsp;&nbsp;</a>
                     </div>
-                    <div class="h4bt"><img src="wxtbot/bot-avatar.png" alt="小桃">
-                    <a href="wxtbot/lt.html">小桃&nbsp;&nbsp;</a>
+                    <div class="h4bt"><img class="tp" src="wxtbot/bot-avatar.png" alt="小桃">
+                        <a href="wxtbot/lt.html">小桃&nbsp;&nbsp;</a>
                     </div>
-                    <div class="h4bt"><img src="wxlbot/bot-avatar.png" alt="小绿">
-                    <a href="">小绿（未完成）</a>
+                    <div class="h4bt"><img class="tp" src="wxlbot/bot-avatar.png" alt="小绿">
+                        <a href="">小绿（未完成）</a>
                     </div>
-                    <div class="h4bt"><img src="yzbot/bot-avatar.png" alt="柚子">
-                    <a href="">柚子（未完成）</a>
+                    <div class="h4bt"><img class="tp" src="yzbot/bot-avatar.png" alt="柚子">
+                        <a href="">柚子（未完成）</a>
                     </div>
                 </div>
                 <div class="h3bt">
@@ -72,20 +76,20 @@
                 <h2>阿拜多斯学院</h2>
                 <div class="h3bt">
                     <h3>对策委员会</h3>
-                    <div class="h4bt"><img src="xybot/bot-avatar.png" alt="星野">
-                    <a href="xybot/lt.html">星野</a>
+                    <div class="h4bt"><img class="tp" src="xybot/bot-avatar.png" alt="星野">
+                        <a href="xybot/lt.html">星野&nbsp;&nbsp;</a>
                     </div>
-                    <div class="h4bt"><img src="bzbot/bot-avatar.png" alt="白子">
-                    <a href="bzbot/lt.html">白子</a>
+                    <div class="h4bt"><img class="tp" src="bzbot/bot-avatar.png" alt="白子">
+                        <a href="bzbot/lt.html">白子&nbsp;&nbsp;</a>
                     </div>
-                    <div class="h4bt"><img src="qxbot/bot-avatar.png" alt="芹香">
-                    <a href="">芹香（未完成）</a>
+                    <div class="h4bt"><img class="tp" src="qxbot/bot-avatar.png" alt="芹香">
+                        <a href="">芹香（未完成）</a>
                     </div>
-                    <div class="h4bt"><img src="lybot/bot-avatar.png" alt="绫音">
-                    <a href="">绫音（未完成）</a>
+                    <div class="h4bt"><img class="tp" src="lybot/bot-avatar.png" alt="绫音">
+                        <a href="">绫音（未完成）</a>
                     </div>
-                    <div class="h4bt"><img src="yglbot/bot-avatar.png" alt="野宫">
-                    <a href="">野宫（未完成）</a>
+                    <div class="h4bt"><img class="tp" src="yglbot/bot-avatar.png" alt="野宫">
+                        <a href="">野宫（未完成）</a>
                     </div>
                 </div>
             </div>
@@ -123,5 +127,9 @@
         // 每10秒更新一次
         setInterval(changeBackground, 10000);
 
+        function toggleContent() {
+            const content = document.getElementById('myTopnav');
+            content.classList.toggle('qiehuan');
+        }
     </script>
 </body>
