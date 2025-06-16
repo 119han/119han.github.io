@@ -30,7 +30,11 @@
 <body>
 
     <div class="content">
-        <p>当前背景: <span id="bg-index">1</span>/<span id="bg-total">1</span><i class="fa-cog" onclick="toggleContent()"><img style="width: 100%;" src="yj.png"></i></p>
+        <p>当前背景: <span id="bg-index">1</span>/<span id="bg-total">1</span>
+            <i class="fa-cog" onclick="toggleContent()">
+                <img id="yj" onclick="cybj()" style="width: 100%;" src="yj.png">
+            </i>
+        </p>
     </div>
 
     <div id="myTopnav" class="topnav">
@@ -130,6 +134,16 @@
         function toggleContent() {
             const content = document.getElementById('myTopnav');
             content.classList.toggle('qiehuan');
+        }
+
+        function cybj() {
+            element = document.getElementById('yj')
+            if (element.src.match("yjB")) {
+                element.src = "yj.png";
+            }
+            else {
+                element.src = "yjB.png";
+            }
         }
     </script>
 </body>
