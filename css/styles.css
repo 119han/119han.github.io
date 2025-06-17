@@ -3,7 +3,7 @@ body {
     background-color: #ffffff;
     /*背景颜色*/
     font-family: 微软雅黑；
-    /*字体样式*/
+        /*字体样式*/
 }
 
 h1 {
@@ -57,6 +57,8 @@ h1 {
         /* 设置高度为48.9% */
         font-size: 15px;
         /*字体大小*/
+        border-radius: 40px;
+        /* 设置圆角半径 */
     }
 
     .zd h1 {
@@ -77,10 +79,11 @@ h1 {
     }
 
     .als-bbkb img {
-    max-width: 285%;/* 图片大小为285% */
-    margin: -58px 0px;
-    } 
-    
+        max-width: 285%;
+        /* 图片大小为285% */
+        margin: -58px 0px;
+    }
+
 }
 
 body {
