@@ -34,6 +34,8 @@
 
     .topnav-right .h3bt {
         border-radius: 40px;
+        width: 348px;
+        height: 324px;
     }
 
     p {
@@ -66,6 +68,7 @@
     .topnav-right .tp {
         width: 70px;
         height: 70px;
+        margin: 4px 7px;
     }
 
     .topnav-right .h4bt:hover {
@@ -96,36 +99,42 @@ h3 {
     text-align: center;
     background-color: rgba(255, 255, 255, 0.277);
     border-radius: 10px;
+    width: 200px;
+    height: 172px;
+    margin: 10px 5px;
+    overflow-y: auto;
+    display: inline-block;
 }
 
 .h4bt {
     height: 50px;
     background-color: rgba(255, 255, 255, 0.277);
-    display: inline-block;
+    text-align: center;
     border: 1px solid rgb(168, 152, 152);
     border-radius: 20px;
     margin: 2px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    transition: width 2s, height 2s, transform 1s;
 }
 
 .h4bt:hover {
     box-shadow: 2px 2px 5px 1px rgba(0, 0, 0);
     border-radius: 20px;
-
-    a {
-        color: rgb(0, 102, 255);
-    }
-
+    transform: rotate(360deg);
 }
 
 .tp {
     width: 39px;
     height: 39px;
     border-radius: 100px;
+    margin: 4px 3px;
     border: 1px solid rgba(0, 0, 0, 0.500);
 }
 
 .学院 {
-
     background-color: rgba(255, 255, 255, 0.277);
     border-radius: 10px;
 }
@@ -149,4 +158,5 @@ a {
 
 a:hover {
     color: rgb(0, 102, 255);
+
 }
