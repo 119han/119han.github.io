@@ -5,12 +5,13 @@
     <title>王小桃私人叫</title>
     <meta charset="utf-8">
     <link rel="shortcut icon" href="\tupian\kuyaxi.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="/css/右键菜单.css" type="text/css">
+    <script src="/javaS/右键菜单.js" defer></script>
 </head>
 
 
 
-<body
-    style="background-image:url('wxttp.png'); 
+<body style="background-image:url('wxttp.png'); 
  background-repeat: no-repeat;background-position: center center;height: 700px;background-size: cover;">
     <!--背景图片-->
 
@@ -18,7 +19,7 @@
         <link rel="stylesheet" href="wxtzt.css" type="text/css">
 
         <a style="display: flex; justify-content: center; text-decoration: none;">
-           <p style="text-align:center; font-size: 40px;">王小桃私人叫</p>
+            <p style="text-align:center; font-size: 40px;">王小桃私人叫</p>
         </a>
 
         <a href="/index.html" style="display: flex; justify-content: center; text-decoration: none;">
@@ -28,7 +29,7 @@
 
     <biv style="text-align:center;">
         <link rel="stylesheet" href="wxtcss.css" type="text/css">
-        
+
         <h2>
             <a>
                 <button id="word1" style="font-size: 20px;">苦呀西</button>
@@ -47,7 +48,7 @@
                 <button id="word9" style="font-size: 20px;">OMG</button>
             </a>
         </h3>
-    
+
         <!-- 隐藏的audio元素 -->
         <audio id="audioPlayer" style="display:none;"></audio>
 
@@ -55,6 +56,42 @@
 
     </biv>
 
+    <div id="context-menu">
+        <link rel="stylesheet" href="/css/右键菜单.css" type="text/css">
+        <script src="/javaS/右键菜单.js" defer></script>
+        <div class="menu-item" onclick="handleClick('html')">跳转主页</div>
+        <div class="menu-item" onclick="handleClick('wxt')">王小桃私人叫</div>
+        <div class="menu-item" onclick="handleClick('xyx')">小游戏界面</div>
+        <div class="menu-item" onclick="handleClick('yyq')">音乐网页</div>
+        <div class="menu-separator"></div>
+        <div class="submenu-container">
+            <div class="menu-item has-submenu" onclick="handleClick('AI聊天网页')">AI聊天网页</div>
+            <div class="submenu">
+                <div class="submenu-container">
+                    <div class="menu-item has-submenu" onclick="handleClick('yxbot')">优香</div>
+                    <div class="submenu">
+                        <div class="menu-item disabled">体操服</div>
+                        <div class="menu-item disabled">睡衣</div>
+                    </div>
+                </div>
+                <div class="submenu-container">
+                    <div class="menu-item has-submenu" onclick="handleClick('alsbot')">爱丽丝</div>
+                    <div class="submenu">
+                        <div class="menu-item disabled">女仆</div>
+                        <div class="menu-item disabled">冬季服</div>
+                    </div>
+                </div>
+                <div class="submenu-container">
+                    <div class="menu-item has-submenu" onclick="handleClick('wxtbot')">小桃</div>
+                    <div class="submenu">
+                        <div class="menu-item disabled">女仆</div>
+                        <div class="menu-item disabled">冬季服</div>
+                    </div>
+                </div>
+                <div class="menu-item disabled">更多点击AI聊</div>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>

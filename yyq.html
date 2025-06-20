@@ -2,6 +2,8 @@
     <meta charset="utf-8">
     <title>音乐网页</title>
     <link rel="stylesheet" href="css/xy.css">
+    <link rel="stylesheet" href="/css/右键菜单.css" type="text/css">
+    <script src="/javaS/右键菜单.js" defer></script>
 </head>
 
 <body class="bodya" style="background-image:url('tupian/gcmm.jpg'); 
@@ -33,15 +35,51 @@
                 <div onclick="aaa()">愛♡スクリ～ム！</div>
             </div>
         </div>
-             
+
         <div style="text-align:center;font-size: 10px;display:flex;justify-content:center;">
             <div class="game">
-                <img src="yyq/tzdxp/76ce9059f9e6eb8f9a73f5e3986cc8d3.jpg" alt="天真的橡皮（DJ版）" width="50" height="50" onclick="tzdxp()">
+                <img src="yyq/tzdxp/76ce9059f9e6eb8f9a73f5e3986cc8d3.jpg" alt="天真的橡皮（DJ版）" width="50" height="50"
+                    onclick="tzdxp()">
                 <div onclick="tzdxp()">天真的橡皮（DJ版）</div>
             </div>
             <div class="game">
                 <img src="yyq/bbkb/tp.jpg" alt="爱丽丝邦邦咔邦" width="50" height="50" onclick="bbkb()">
                 <div onclick="bbkb()">爱丽丝邦邦咔邦</div>
+            </div>
+        </div>
+    </div>
+
+    <div id="context-menu">
+        <div class="menu-item" onclick="handleClick('html')">跳转主页</div>
+        <div class="menu-item" onclick="handleClick('wxt')">王小桃私人叫</div>
+        <div class="menu-item" onclick="handleClick('xyx')">小游戏界面</div>
+        <div class="menu-item" onclick="handleClick('yyq')">音乐网页</div>
+        <div class="menu-separator"></div>
+        <div class="submenu-container">
+            <div class="menu-item has-submenu" onclick="handleClick('AI聊天网页')">AI聊天网页</div>
+            <div class="submenu">
+                <div class="submenu-container">
+                    <div class="menu-item has-submenu" onclick="handleClick('yxbot')">优香</div>
+                    <div class="submenu">
+                        <div class="menu-item disabled">体操服</div>
+                        <div class="menu-item disabled">睡衣</div>
+                    </div>
+                </div>
+                <div class="submenu-container">
+                    <div class="menu-item has-submenu" onclick="handleClick('alsbot')">爱丽丝</div>
+                    <div class="submenu">
+                        <div class="menu-item disabled">女仆</div>
+                        <div class="menu-item disabled">冬季服</div>
+                    </div>
+                </div>
+                <div class="submenu-container">
+                    <div class="menu-item has-submenu" onclick="handleClick('wxtbot')">小桃</div>
+                    <div class="submenu">
+                        <div class="menu-item disabled">女仆</div>
+                        <div class="menu-item disabled">冬季服</div>
+                    </div>
+                </div>
+                <div class="menu-item disabled">更多点击AI聊</div>
             </div>
         </div>
     </div>

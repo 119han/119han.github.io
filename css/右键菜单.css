@@ -1,0 +1,110 @@
+/* 自定义菜单容器 */
+#context-menu {
+    position: fixed;
+    display: none;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    z-index: 9999;
+    min-width: 160px;
+    transition: opacity 0.15s;
+}
+
+#context-menu::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('/tupian/右键背景.png');
+    filter: blur(1px);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 1;
+    /* 不透明 */
+    z-index: -1;
+    /* 确保背景在内容下方 */
+}
+
+/* 菜单项通用样式 */
+.menu-item {
+    color: #fff;
+    padding: 8px 15px;
+    cursor: pointer;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    transition: background 0.2s;
+}
+
+/* 悬停效果 */
+.menu-item:hover {
+    background: #4a90e2;
+}
+
+/* 菜单分隔线 */
+.menu-separator {
+    height: 1px;
+    background: #4d4d4d;
+    margin: 4px 0;
+}
+
+/* 禁用状态 */
+.menu-item.disabled {
+    color: #666;
+    cursor: default;
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.menu-item::before {
+    content: '';
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-size: contain;
+}
+
+.menu-item.edit::before {
+    background-image: url('edit-icon.svg');
+}
+
+/* 添加子菜单容器样式 */
+.submenu-container {
+    position: relative;
+}
+
+/* 子菜单样式 */
+.submenu {
+    display: none;
+    position: absolute;
+    background: #3d3d3d;
+    min-width: 150px;
+    top: 0;
+    left: 100%;
+    margin-left: 2px;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* 悬停显示子菜单 */
+.submenu-container:hover>.submenu {
+    display: block;
+}
+
+/* 箭头指示符 */
+.has-submenu::after {
+    content: '▶';
+    font-size: 0.8em;
+    margin-left: 8px;
+    float: right;
+    transition: transform 0.2s;
+}
+
+.submenu-container:hover>.has-submenu::after {
+    transform: rotate(90deg);
+}
