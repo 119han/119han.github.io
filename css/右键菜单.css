@@ -108,3 +108,16 @@
 .submenu-container:hover>.has-submenu::after {
     transform: rotate(90deg);
 }
+
+
+/*随机三角形*/
+.triangle {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 40px solid;
+    opacity: 0.9;
+    z-index: -1;
+}
