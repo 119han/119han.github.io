@@ -53,6 +53,9 @@ function handleClick(action) {
         case 'yyq':
             window.location.replace('/yyq.html');
             break;
+        case '右键背景':
+            window.location.replace('/右键背景.html');
+            break;
         case 'AI聊天网页':
             window.location.replace('/bot聊天/bot.html');
             break;
@@ -150,8 +153,8 @@ function updateTriangles() {
         // 如果三角形移出容器，则重置到另一侧
         if (left > 10) left = 0;
         if (left < 0) left = 10;
-        if (top > 24) top = 0;
-        if (top < 0) top = 24;
+        if (top > 28) top = 0;
+        if (top < 0) top = 28;
 
         triangle.style.left = `${left}vw`;
         triangle.style.top = `${top}vh`;

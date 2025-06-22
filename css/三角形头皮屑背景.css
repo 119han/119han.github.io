@@ -1,0 +1,15 @@
+body {
+    overflow: hidden;
+}
+
+.triangle {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 40px solid;
+    /* 颜色将由JavaScript动态设置 */
+    opacity: 0.9;
+    z-index: -1;
+}
