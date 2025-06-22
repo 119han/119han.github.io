@@ -5,7 +5,7 @@ const triangleCount = 80; // 三角形的数量
 function createTriangles() {
     for (let i = 0; i < triangleCount; i++) {
         const triangle = document.createElement('div');
-        triangle.className = 'triangle';
+        triangle.className = 'triangle1';
 
         const colors = ['rgb(255, 255, 255, 0.5)', 'rgb(255, 255, 255, 0.6)', 'rgb(255, 255, 255, 0.7)', 'rgb(255, 255, 255, 0.1)'];
         const randomColor = colors[Math.floor(Math.random() * colors.length)];
@@ -31,7 +31,7 @@ function createTriangles() {
 
 // 更新三角形位置
 function updateTriangles() {
-    const triangles = document.querySelectorAll('.triangle');
+    const triangles = document.querySelectorAll('.triangle1');
 
     triangles.forEach(triangle => {
         let left = parseFloat(triangle.style.left) || 0;

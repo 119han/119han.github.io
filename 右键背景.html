@@ -1,48 +1,51 @@
 <head>
     <meta charset="UTF-8">
     <title>右键背景</title>
-    <link rel="stylesheet" href="css/xy.css">
-    <link rel="stylesheet" href="/css/三角形头皮屑背景.css">
-    <link rel="stylesheet" href="/css/右键菜单.css">
-    <script src="/javaS/右键菜单.js" defer></script>
-    <script src="/javaS/三角形头皮屑背景.js" defer></script>
+    <link rel="stylesheet" href="/css/三角形.css">
+    <script src="/javaS/三角形.js" defer></script>
+    <style>
+        .sz {
+            width: 80px;
+            height: 40px;
+            margin: -8px -8px;
+            /* 外边距 */
+        }
+
+        button {
+            right: 0px;
+            width: 80px;
+            height: 20px;
+            background-color: rgba(139, 54, 244, 0);
+            color: rgba(255, 255, 255, 0.153);
+            border: none;
+        }
+
+        button:hover {
+            background-color: rgb(66, 5, 178);
+            color: rgb(255, 255, 255);
+        }
+    </style>
 </head>
 
-<body class="bodya" style="background-image:url('tupian/右键背景.png');background-position: center; background-repeat: no-repeat;background-size: cover;">
-    <div id="context-menu">
-        <div class="menu-item" onclick="handleClick('html')">跳转主页</div>
-        <div class="menu-item" onclick="handleClick('wxt')">王小桃私人叫</div>
-        <div class="menu-item" onclick="handleClick('xyx')">小游戏界面</div>
-        <div class="menu-item" onclick="handleClick('yyq')">音乐网页</div>
-        <div class="menu-item" onclick="handleClick('右键背景')">右键背景</div>
-        <div class="menu-separator"></div>
-        <div class="submenu-container">
-            <div class="menu-item has-submenu" onclick="handleClick('AI聊天网页')">AI聊天网页</div>
-            <div class="submenu">
-                <div class="submenu-container">
-                    <div class="menu-item has-submenu" onclick="handleClick('yxbot')">优香</div>
-                    <div class="submenu">
-                        <div class="menu-item disabled">体操服</div>
-                        <div class="menu-item disabled">睡衣</div>
-                    </div>
-                </div>
-                <div class="submenu-container">
-                    <div class="menu-item has-submenu" onclick="handleClick('alsbot')">爱丽丝</div>
-                    <div class="submenu">
-                        <div class="menu-item disabled">女仆</div>
-                        <div class="menu-item disabled">冬季服</div>
-                    </div>
-                </div>
-                <div class="submenu-container">
-                    <div class="menu-item has-submenu" onclick="handleClick('wxtbot')">小桃</div>
-                    <div class="submenu">
-                        <div class="menu-item disabled">女仆</div>
-                        <div class="menu-item disabled">冬季服</div>
-                    </div>
-                </div>
-                <div class="menu-item disabled">更多点击AI聊</div>
-            </div>
-        </div>
+<body
+    style="background-image:url('tupian/右键背景.png');background-position: center; background-repeat: no-repeat;background-size: cover;">
+    <div class="sz">
+        <button onclick="showDropdown()">显示/隐藏</button>
+        <button onclick="fhzy()">返回主页</button>
     </div>
     <div id="三角形头皮屑背景"></div>
+
+    <script>
+        function showDropdown() {
+            var dropdown = document.getElementById("三角形头皮屑背景");
+            if (dropdown.style.display === "none") {
+                dropdown.style.display = "block";
+            } else {
+                dropdown.style.display = "none";
+            }
+        }
+        function fhzy() {
+            window.location.href = "/index.html";
+        }
+    </script>
 </body>
