@@ -57,7 +57,7 @@ function handleClick(action) {
             window.location.replace('/右键背景.html');
             break;
         case 'AI聊天网页':
-            window.location.replace('/bot聊天/bot.html');
+            window.location.replace('https://yd.frp-shy.com:61006/');
             break;
         case 'yxbot':
             window.location.replace('/bot聊天/yxbot/lt.html');
